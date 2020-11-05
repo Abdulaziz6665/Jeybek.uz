@@ -36,7 +36,6 @@
     padding: 20px 0;
     text-decoration: none;
     color: $main-text;
-    // border-bottom: 1.5px solid transparent;
     
     &::after {
       content: '';
@@ -46,7 +45,6 @@
       margin-right: auto;
       width: 85%;
       border-bottom: 1.3px solid $hover-text;
-      // transform-origin: left;
       transform: scaleX(0);
       transition: transform 0.2s linear;
     }
