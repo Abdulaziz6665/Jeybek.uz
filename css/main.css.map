@@ -14,7 +14,8 @@
         "../scss/blocks/_site-header.scss",
         "../scss/blocks/_hero.scss",
         "../scss/blocks/_under-hero.scss",
-        "../scss/blocks/_cotigory1.scss"
+        "../scss/blocks/_cotigory1.scss",
+        "../scss/blocks/_news.scss"
     ],
     "names": [],
     "file": "main.css"
