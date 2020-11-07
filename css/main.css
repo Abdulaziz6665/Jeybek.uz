@@ -529,6 +529,7 @@ img {
   margin: 0;
   padding: 0;
   width: 270px;
+  color: rgba(34, 34, 34, 0.7);
   list-style-type: none;
 }
 
