@@ -1,0 +1,24 @@
+.news-wrapper {
+  text-align: center;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    width: 50%;
+    color: rgba($main-text, 0.7);
+  }
+}
+
+.news-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
