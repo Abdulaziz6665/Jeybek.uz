@@ -9,6 +9,8 @@
 }
 
 .hero-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   width: 270px;
@@ -44,12 +46,13 @@
 
   img {
     display: block;
-    flex-grow: 1;
+    flex-grow: 0;
   }
 }
 
 .hero-item {
   display: inline-flex;
+  flex-grow: 1;
   align-items: center;
   padding: 10px 25px;
   width: 100%;
@@ -72,5 +75,9 @@
     content: ">";
     margin-left: auto;
     
+  }
+
+  &:hover {
+    color: $hover-text;
   }
 }
