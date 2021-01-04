@@ -5,7 +5,6 @@
 
 .hero-wrapper {
   display: flex;
-  // align-items: center;
 }
 
 .hero-list {
@@ -80,4 +79,29 @@
   &:hover {
     color: $hover-text;
   }
+}
+
+.social-link-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  transition: transform 0.7s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  a {
+    text-decoration: none;
+
+    img {
+      display: block;
+    }
+  }
+}
+
+.box-hidden:hover {
+  transform-origin: left;
+  transform: scaleX(0);
 }
