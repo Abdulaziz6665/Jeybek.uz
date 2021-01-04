@@ -85,23 +85,113 @@
   position: fixed;
   top: 50%;
   left: 0;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
   transition: transform 0.7s ease;
 
-  &:hover {
-    transform: scale(1.2);
-  }
-
   a {
-    text-decoration: none;
-
-    img {
-      display: block;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.box-hidden:hover {
+.box-hidden {
   transform-origin: left;
   transform: translateX(-100%);
+}
+
+.icon-follower {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.social-wrapper {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+  height: 200px;
+  background-color: rgba(92, 72, 72, 0.5);
+  transition: transform 0.5s ease;
+
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.social-block {
+  transform: translateX(-100%);
+}
+
+.icon-youtube{
+  width: 20px;
+  height: 20px;
+  color: #000;
+
+  &:hover {
+    color: #cd201f; 
+  }
+}
+
+.icon-instagram{
+  width: 20px;
+  height: 20px;
+  color: #000;
+  
+  &:hover {
+  color: #bd410f;  
+  }
+}
+
+.icon-telegram{
+  width: 20px;
+  height: 20px;
+  color: #000;
+  
+  &:hover {
+    color: #0088cc;
+  }
+}
+
+.icon-facebook{
+  width: 20px;
+  height: 20px;
+  color: #000;
+  
+  &:hover {
+    color: #4267B2;
+  }
 }
