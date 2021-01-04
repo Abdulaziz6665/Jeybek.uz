@@ -647,8 +647,8 @@ img {
 .box-hidden:hover {
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .under-hero {

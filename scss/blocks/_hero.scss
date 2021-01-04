@@ -103,5 +103,5 @@
 
 .box-hidden:hover {
   transform-origin: left;
-  transform: scaleX(0);
+  transform: translateX(-100%);
 }
