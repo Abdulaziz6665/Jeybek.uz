@@ -622,6 +622,7 @@ img {
 
 .social-link-wrapper {
   position: fixed;
+  z-index: 2;
   top: 50%;
   left: 0;
   display: -webkit-box;
@@ -635,7 +636,8 @@ img {
           justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #000;
+  cursor: pointer;
+  background-color: rgba(221, 225, 231, 0.5);
   -webkit-transition: -webkit-transform 0.7s ease;
   transition: -webkit-transform 0.7s ease;
   transition: transform 0.7s ease;
@@ -664,11 +666,12 @@ img {
 .icon-follower {
   width: 20px;
   height: 20px;
-  color: #fff;
+  color: #000;
 }
 
 .social-wrapper {
   position: fixed;
+  z-index: 10;
   top: 40%;
   left: 0;
   display: -webkit-box;
@@ -683,7 +686,7 @@ img {
           align-items: center;
   width: 40px;
   height: 200px;
-  background-color: rgba(92, 72, 72, 0.5);
+  background-color: rgba(221, 225, 231, 0.5);
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
@@ -707,6 +710,27 @@ img {
   text-decoration: none;
 }
 
+.social-wrapper a:hover {
+  -webkit-box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+          box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.social-wrapper a:hover .icon-youtube {
+  color: #cd201f;
+}
+
+.social-wrapper a:hover .icon-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-wrapper a:hover .icon-telegram {
+  color: #0088cc;
+}
+
+.social-wrapper a:hover .icon-facebook {
+  color: #4267B2;
+}
+
 .social-wrapper button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,7 +743,7 @@ img {
           justify-content: center;
   border: none;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   cursor: pointer;
   outline: none;
 }
@@ -747,19 +771,11 @@ img {
   color: #000;
 }
 
-.icon-youtube:hover {
-  color: #cd201f;
-}
-
 .icon-instagram {
   width: 20px;
   height: 20px;
   color: #000;
   border-radius: 7px;
-}
-
-.icon-instagram:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .icon-telegram {
@@ -768,18 +784,29 @@ img {
   color: #000;
 }
 
-.icon-telegram:hover {
-  color: #0088cc;
-}
-
 .icon-facebook {
   width: 20px;
   height: 20px;
   color: #000;
 }
 
-.icon-facebook:hover {
-  color: #4267B2;
+.site-up {
+  position: fixed;
+  z-index: 10;
+  bottom: 50px;
+  right: 50px;
+}
+
+.site-up a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 0px 10px #ccc;
+          box-shadow: 1px 0px 10px #ccc;
+}
+
+.site-up a img {
+  display: block;
 }
 
 .under-hero {
